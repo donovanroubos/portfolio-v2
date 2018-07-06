@@ -1,6 +1,8 @@
 <template>
  <div class="">
-   White portfolio
+   <h1>Recent work</h1>
+   <p>Phasellus posuere mauris quis lorem vulputate aliquam. Proin convallis felis et finibus hendrerit. Maecenas ultrices nunc a sapien maximus, eu condimentum leo placerat. Nam a diam congue lectus ullamcorper ultricies non id enim. In quis erat fermentum nibh rutrum consectetur.</p>
+
  </div>
 </template>
 
@@ -13,20 +15,12 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+p {
+  max-width: 600px;
+  text-align: left;
+  margin: 0 auto;
+  line-height: 32px;
+  color: #4F5059;
 }
 </style>

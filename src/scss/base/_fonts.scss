@@ -1,0 +1,18 @@
+$font_path: '~@/assets/fonts/';
+
+// Font: Helvetica
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url($font_path +'HelveticaNeue-Medium.woff2') format('woff2'),
+  url($font_path +'HelveticaNeue-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url($font_path +'HelveticaNeue.woff2') format('woff2'),
+  url($font_path +'HelveticaNeue.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
