@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <transition>
+  <div id="#app">
       <header class="container-l header">
         <router-link to="/" tag="div"><a class="logo">Donovan Roubos</a></router-link>
         <nav class="navigation">
@@ -9,10 +8,20 @@
             <router-link to="/#contact">Contact</router-link>
         </nav>
       </header>
-      <router-view/>
-    </transition>
+
+    <div class="container-l">
+      <transition name="fade" mode="out-in">
+        <router-view/>
+      </transition>
+    </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'App'
+}
+</script>
 
 <style lang="scss" scoped>
 .header {
@@ -43,5 +52,12 @@
       text-decoration: underline;
     }
   }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>

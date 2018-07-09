@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <HelloWorld />
+    asdasd
   </div>
 </template>
 
