@@ -6,6 +6,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
   font-weight: 400;
+
+  &.fixed-scroll {
+    overflow-y: hidden;
+  }
 }
 
 input {

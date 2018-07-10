@@ -2,11 +2,19 @@
   <div id="#app">
     <header class="container-l header">
       <router-link to="/" tag="div"><a class="logo">Donovan Roubos</a></router-link>
+      <div class="nav-mobile-toggler" @click="toggleMobileNav()">
+        <div :class="['nav-icon', { active: mobileNavShow }]">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
       <nav class="navigation">
           <router-link to="/work">Work</router-link>
           <router-link to="/about">About</router-link>
           <router-link to="/#contact">Contact</router-link>
       </nav>
+
     </header>
 
     <div class="container-l content">
@@ -37,6 +45,8 @@ import Icon from '@/components/Icon'
 export default {
   name: 'App',
   data: () => ({
+    mobileNavShow: false,
+    isMobileView: false,
     footer: {
       footerText: 'Do you have a good idea, question or something else?',
       footerCta: 'Contact me',
@@ -60,6 +70,27 @@ export default {
   }),
   components: {
     Icon
+  },
+  methods: {
+    toggleBodyFixed() {
+      const body = document.body
+
+      if(this.mobileNavShow == true) {
+        body.classList.add('fixed-scroll')
+      } else {
+        body.classList.remove('fixed-scroll')
+      }
+    },
+    toggleMobileNav() {
+      this.mobileNavShow = !this.mobileNavShow
+
+      this.toggleBodyFixed()
+    },
+  },
+  mounted() {
+    window.onresize( () => {
+      console.log('123')
+    });
   }
 }
 </script>
@@ -78,6 +109,74 @@ export default {
     color: $black;
     font-weight: 400;
     text-decoration: none;
+  }
+
+  .nav-mobile-toggler {
+    display: none;
+    width: 32px;
+    height: 32px;
+    transform: scaleX(-1);
+
+    @include breakpoint(s) {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      .nav-icon {
+        position: relative;
+        width: 32px;
+        height: 24px;
+        cursor: pointer;
+
+        span {
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          opacity: 1;
+          transition: .3s ease;
+          background: $black;
+          transform-origin: 0 1px;
+
+          &:nth-child(1) {
+            top: 0;
+            left: 0;
+            width: 100%;
+          }
+
+          &:nth-child(2) {
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+          &:nth-child(3) {
+            bottom: 0;
+            right: 0;
+            width: 65%;
+          }
+        }
+
+        &.active {
+
+          span {
+            &:nth-child(1) {
+              transform: rotate(45deg);
+              left: 4px;
+            }
+
+            &:nth-child(2) {
+              opacity: 0;
+            }
+
+            &:nth-child(3) {
+              transform: rotate(-45deg);
+              width: 100%;
+              right: -4px;
+            }
+          }
+        }
+      }
+    }
   }
 
   .navigation {
