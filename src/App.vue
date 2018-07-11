@@ -1,7 +1,7 @@
 <template>
   <div id="#app">
     <header class="container-l header">
-      <router-link to="/" tag="div"><a class="logo">Donovan Roubos</a></router-link>
+      <router-link to="/" tag="div"><a class="logo">dr.</a></router-link>
       <div class="nav-mobile-toggler" @click="toggleMobileNav()">
         <div :class="['nav-icon', { active: mobileNavShow }]">
           <span></span>
@@ -9,12 +9,11 @@
           <span></span>
         </div>
       </div>
-      <nav class="navigation">
+      <nav :class="['navigation', { show: mobileNavShow }]">
           <router-link to="/work">Work</router-link>
           <router-link to="/about">About</router-link>
           <router-link to="/#contact">Contact</router-link>
       </nav>
-
     </header>
 
     <div class="container-l content">
@@ -46,7 +45,6 @@ export default {
   name: 'App',
   data: () => ({
     mobileNavShow: false,
-    isMobileView: false,
     footer: {
       footerText: 'Do you have a good idea, question or something else?',
       footerCta: 'Contact me',
@@ -77,20 +75,22 @@ export default {
 
       if(this.mobileNavShow == true) {
         body.classList.add('fixed-scroll')
+        window.scrollTo(0, 0)
       } else {
         body.classList.remove('fixed-scroll')
+
       }
     },
     toggleMobileNav() {
       this.mobileNavShow = !this.mobileNavShow
 
       this.toggleBodyFixed()
-    },
+    }
   },
-  mounted() {
-    window.onresize( () => {
-      console.log('123')
-    });
+  watch: {
+    '$route' () {
+      this.$set(this, 'mobileNavShow', false)
+    }
   }
 }
 </script>
@@ -104,11 +104,19 @@ export default {
   margin-top: 56px;
   align-items: center;
 
+  @include breakpoint(s) {
+    margin-top: 32px;
+  }
+
   .logo {
     font-size: 21px;
     color: $black;
-    font-weight: 400;
+    font-weight: 700;
+    font-family: Open Sans;
+    font-size: 32px;
     text-decoration: none;
+    z-index: 51;
+    position: relative;
   }
 
   .nav-mobile-toggler {
@@ -116,6 +124,7 @@ export default {
     width: 32px;
     height: 32px;
     transform: scaleX(-1);
+    z-index: 51;
 
     @include breakpoint(s) {
       display: flex;
@@ -182,14 +191,69 @@ export default {
   .navigation {
     text-align: right;
 
+    @include breakpoint(s) {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      left: 100%;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: #fff;
+      z-index: 50;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: all .6s cubic-bezier(0.19, 1, 0.22, 1);
+
+      &.show {
+        left: 0;
+      }
+    }
+
     a {
       color: $black;
       font-size: 18px;
-      padding: 0px 16px;
+      margin: 0px 16px;
       text-decoration: none;
+      position: relative;
 
       &.router-link-exact-active {
-        text-decoration: underline;
+        &::before {
+          bottom: -4px;
+          background: $black;
+        }
+
+        @include breakpoint(s) {
+          &::before {
+            bottom: 8px;
+          }
+        }
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: transparent;
+        bottom: -16px;
+        left: 0;
+        right: 0;
+        transition: all .6s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        @include breakpoint(s) {
+          bottom: 0px;
+          height: 4px;
+        }
+      }
+
+      @include breakpoint(s) {
+        padding: 16px 0;
+        font-size: 40px;
+        font-weight: 600;
       }
     }
   }
@@ -258,7 +322,6 @@ export default {
 
           @include breakpoint(s) {
             margin: 0 auto;
-
             padding: 0 16px;
           }
         }
@@ -268,7 +331,7 @@ export default {
 }
 
 .fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
+  transition: opacity .25s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;

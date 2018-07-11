@@ -9,6 +9,7 @@ html {
 
   &.fixed-scroll {
     overflow-y: hidden;
+    position: fixed;
   }
 }
 
