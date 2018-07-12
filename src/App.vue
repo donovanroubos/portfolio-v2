@@ -16,11 +16,9 @@
       </nav>
     </header>
 
-    <div class="container-l content">
-      <transition name="fade" mode="out-in">
-        <router-view/>
-      </transition>
-    </div>
+    <transition name="fade" mode="out-in">
+      <router-view/>
+    </transition>
 
     <footer class="container-l footer">
       <div class="footer-wrap">
@@ -101,11 +99,11 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   height: 24px;
-  margin-top: 56px;
+  padding-top: 56px;
   align-items: center;
 
   @include breakpoint(s) {
-    margin-top: 32px;
+    padding-top: 32px;
   }
 
   .logo {

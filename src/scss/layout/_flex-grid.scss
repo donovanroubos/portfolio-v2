@@ -8,6 +8,7 @@ $breakpoint-grid-xs: 480px;
 .row {
   display: flex;
   flex-direction: row;
+  width: 100%;
 
   &.align-right {
     justify-content: flex-end;

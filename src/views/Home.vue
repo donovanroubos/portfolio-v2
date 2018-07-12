@@ -1,18 +1,22 @@
 <template>
-  <div class="home">
-    <HelloWorld />
-    asdasd
+  <div class="container-l home">
+    <IntroAnimation />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import IntroAnimation from '@/components/IntroAnimation'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
-  },
-};
+    IntroAnimation
+  }
+}
 </script>
+
+<style lang="scss">
+.home {
+  //
+}
+</style>
