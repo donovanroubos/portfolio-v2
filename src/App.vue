@@ -88,6 +88,7 @@ export default {
   watch: {
     '$route' () {
       this.$set(this, 'mobileNavShow', false)
+      this.toggleBodyFixed()
     }
   }
 }
@@ -110,7 +111,6 @@ export default {
     font-size: 21px;
     color: $black;
     font-weight: 700;
-    font-family: Open Sans;
     font-size: 32px;
     text-decoration: none;
     z-index: 51;
@@ -190,7 +190,7 @@ export default {
     text-align: right;
 
     @include breakpoint(s) {
-      position: absolute;
+      position: fixed;
       width: 100%;
       height: 100vh;
       left: 100%;
@@ -216,6 +216,19 @@ export default {
       margin: 0px 16px;
       text-decoration: none;
       position: relative;
+
+      &:hover {
+        &::before {
+          bottom: -4px;
+          background: $black;
+        }
+
+        @include breakpoint(s) {
+          &::before {
+            bottom: 8px;
+          }
+        }
+      }
 
       &.router-link-exact-active {
         &::before {

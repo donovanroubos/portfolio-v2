@@ -6,7 +6,7 @@
       </div>
       <div class="message-container">
         <div class="message">
-          Donovan — A passionate Frontend &#60;developer/&gt; who loves awesome design.
+          Donovan — A passionate Frontend &#60;developer/&gt; who loves awesome <span>design</span>.
         </div>
       </div>
     </div>
@@ -48,6 +48,8 @@ export default {
 
     .line-numbers {
       font-size: 48px;
+      font-family: DroidSansMono, monospace;
+      font-weight: 400;
       color: $lighter-gray;
       width: 58px;
       margin-right: 16px;
@@ -62,6 +64,12 @@ export default {
         line-height: 53px;
         margin-right: 4px;
         width: 52px;
+      }
+
+      @include breakpoint(xs) {
+        font-size: 28px;
+        width: 40px;
+        line-height: 36px;
       }
     }
 
@@ -78,6 +86,15 @@ export default {
         @include breakpoint(0px, 920px) {
           font-size: 40px;
           line-height: 53px;
+        }
+
+        @include breakpoint(xs) {
+          font-size: 28px;
+          line-height: 36px;
+        }
+
+        span {
+          text-decoration: underline;
         }
       }
     }
