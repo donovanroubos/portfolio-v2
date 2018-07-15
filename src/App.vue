@@ -17,7 +17,9 @@
     </header>
 
     <transition name="fade" mode="out-in">
-      <router-view/>
+      <keep-alive>
+        <router-view></router-view>
+      </keep-alive>
     </transition>
 
     <footer class="container-l footer">
@@ -54,7 +56,7 @@ export default {
           link: ''
         },
         {
-          name: 'dribble',
+          name: 'dribbble',
           link: ''
         },
         {

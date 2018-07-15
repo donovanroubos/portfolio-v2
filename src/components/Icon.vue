@@ -3,11 +3,13 @@
     width: `${width}px`,
     height: `${height}px`,
     }">
-  <img :src="iconsUrl(name)" draggable="false"/>
+  <img :src="pathResolving('assets/images/icons', `${name}.svg`)" draggable="false">
 </div>
 </template>
 
 <script>
+import {pathResolving} from '@/mixins/pathResolving'
+
 export default {
   name: 'Icon',
   props: {
@@ -28,11 +30,7 @@ export default {
       required: false
     }
   },
-  methods: {
-    iconsUrl(iconName) {
-      return require(`@/assets/images/icons/${iconName}.svg`)
-    }
-  }
+  mixins: [pathResolving]
 }
 </script>
 

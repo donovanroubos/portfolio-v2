@@ -51,7 +51,6 @@ $breakpoint-grid-xs: 480px;
     .col-#{$i} {
       flex-basis: (100% / 12) * $i;
       max-width: (100% / 12) * $i;
-      padding: 8px;
 
       &.align-self-top {
         align-self: flex-start;
@@ -64,7 +63,16 @@ $breakpoint-grid-xs: 480px;
       &.align-self-bottom {
         align-self: flex-end;
       }
+
+      @include breakpoint(s) {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
     }
+  }
+
+  @include breakpoint(s) {
+    flex-wrap: wrap;
   }
 }
 
