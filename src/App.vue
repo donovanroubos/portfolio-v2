@@ -22,24 +22,13 @@
       </keep-alive>
     </transition>
 
-    <footer class="container-l footer">
-      <div class="footer-wrap">
-        <h1>{{ footer.footerText }} <a :href="footer.footerCtaLink">{{ footer.footerCta }} 👦🏻</a></h1>
-        <div class="bottom">
-          <span>{{ footer.copyRight }}</span>
-          <div class="socials">
-            <a v-for="social in footer.socials" :href="social.link">
-              <Icon :name="social.name" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <Footer :data="footer" />
+
   </div>
 </template>
 
 <script>
-import Icon from '@/components/Icon'
+import Footer from '@/components/Footer'
 
 export default {
   name: 'App',
@@ -67,7 +56,7 @@ export default {
     }
   }),
   components: {
-    Icon
+    Footer
   },
   methods: {
     toggleBodyFixed() {
@@ -274,73 +263,6 @@ export default {
 
 .content {
   margin: 128px auto;
-}
-
-.footer {
-  .footer-wrap {
-    border-top: 1px solid $lighter-gray;
-
-    h1 {
-      padding: 48px 0 88px 0;
-
-      @include breakpoint(s) {
-        padding: 24px 0 48px 0;
-      }
-
-      a {
-        text-decoration: none;
-        position: relative;
-        display: inline-block;
-        color: $black;
-
-        &::after {
-          content: '';
-          width: 100%;
-          height: 4px;
-          background: $black;
-          display: block;
-          position: relative;
-          bottom: 5px;
-        }
-      }
-    }
-
-    .bottom {
-      display: flex;
-      justify-content: space-between;
-
-      @include breakpoint(s) {
-        justify-content: center;
-        flex-direction: column-reverse;
-        align-items: center;
-      }
-
-      span {
-        font-size: 18px;
-        color: $lighter-gray;
-        align-self: flex-end;
-
-        @include breakpoint(s) {
-          align-self: center;
-          margin: 32px 0;
-        }
-      }
-
-      .socials {
-        display: flex;
-        align-content: center;
-
-        .icon {
-          margin: 0 0 0 32px;
-
-          @include breakpoint(s) {
-            margin: 0 auto;
-            padding: 0 16px;
-          }
-        }
-      }
-    }
-  }
 }
 
 .fade-enter-active, .fade-leave-active {
