@@ -2,7 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import About from './views/About.vue'
-import Components from './views/Components.vue'
+import Work from './views/Work.vue'
+import Case from './views/Case.vue'
 
 Vue.use(Router)
 
@@ -20,9 +21,16 @@ export default new Router({
       component: About
     },
     {
-      path: '/components',
-      name: 'components',
-      component: Components
+      path: '/work',
+      name: 'work',
+      component: Work,
+      props: true
+    },
+    {
+      path: '/work/:caseName',
+      name: 'case',
+      component: Case,
+      props: true
     }
   ]
 })
