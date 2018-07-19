@@ -5,7 +5,7 @@
         <h1>{{ caseItem.name }}</h1>
       </div>
       <div class="col-7">
-        <p>Aenean hendrerit felis sit amet leo lobortis malesuada. Nullam sit amet arcu tincidunt, condimentum ligula vel, pretium velit. </p>
+        <p>{{ caseItem.description }}</p>
       </div>
     </div>
   </div>
@@ -13,9 +13,9 @@
 
 <script>
 export default {
-  name: 'case',
+  name: 'work',
   data: () => ({
-    caseItem: null
+    caseItem: {}
   }),
   props: {
     caseName: {
@@ -32,14 +32,11 @@ export default {
   methods: {
     fetchData () {
       const casesData = this.$globalData.content.cases
-      const caseData = casesData.filter(x => x.id === this.caseName)
+      const caseData  = casesData.find(data => this.$route.params.caseName === data.id)
 
-      if (caseData.length != 0) {
-        this.loading = false
-        const data = caseData[0]
-        this.$set(this, 'caseItem', data)
-      } else {
-        console.log('Error')
+      if (caseData != undefined) {
+        this.$set(this, 'caseItem', caseData)
+      } else if(this.$route.name == 'work'){
         this.$router.push('/work')
       }
     }

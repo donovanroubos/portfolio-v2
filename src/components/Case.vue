@@ -4,7 +4,7 @@
       <h3>{{ title }}</h3>
       <p class="type">{{ type }}<span>{{ year }}</span></p>
       <p class="about">Cras posuere velit ac egestas sodales. Suspendisse in nunc sed nisi tincidunt accumsan.</p>
-      <Button label="View case" link="work/blanko" />
+      <Button label="View case" :link="link" />
     </div>
     <div class="col-7 preview">
       <div class="preview-container">
@@ -37,6 +37,11 @@ export default {
     preview: {
       type: String,
       required: false
+    },
+    link: {
+      type: String,
+      required: false,
+      default: '/work'
     }
   },
   mixins: [pathResolving],

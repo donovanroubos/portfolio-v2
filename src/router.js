@@ -28,7 +28,7 @@ export default new Router({
     },
     {
       path: '/work/:caseName',
-      name: 'case',
+      name: 'work',
       component: Case,
       props: true
     }

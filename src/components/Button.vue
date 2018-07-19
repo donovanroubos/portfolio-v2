@@ -1,5 +1,5 @@
 <template>
-  <router-link tag="button" :to="'/' + link">
+  <router-link tag="button" :to="link">
     {{ label }}
     <span class="arrow">→</span>
     <span class="line"></span>

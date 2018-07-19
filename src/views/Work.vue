@@ -14,6 +14,7 @@
     :type="caseItem.type"
     :year="caseItem.date"
     :preview="caseItem.preview"
+    :link="`${routePath}/${caseItem.id}`"
     />
 
   </div>
@@ -25,9 +26,10 @@ import Case from '@/components/Case'
 export default {
   name: 'work',
   data: () => ({
-    name: null,
-    description: null,
-    cases: null
+    name: '',
+    description: '',
+    cases: [],
+    routePath: ''
   }),
   components: {
     Case
@@ -41,17 +43,18 @@ export default {
   methods: {
     fetchData() {
       const pagesData = this.$globalData.content.pages
-      const filteredPageData = pagesData.filter(x => x.name === this.$route.name)
-      const pageData = filteredPageData[0]
+      const pageData  = pagesData.find(data => this.$route.name === data.id)
+
       const allCaseData = this.$globalData.content.cases
 
-      if (pagesData.length && allCaseData.length !== 0) {
+      this.$set(this, 'routePath', this.$route.path)
+
+      if (pageData != undefined && allCaseData.length != 0) {
         this.$set(this, 'name', pageData.name)
         this.$set(this, 'description', pageData.description)
 
         this.$set(this, 'cases', allCaseData)
-      } else {
-        console.log('Error')
+      } else if(this.$route.name == 'work') {
         this.$router.push('/')
       }
     }

@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 export default {
   content: {
     cases: [
@@ -6,7 +7,7 @@ export default {
         name: 'Blanko',
         type: 'Desktop app',
         date: '2018',
-        description: 'Cras posuere velit ac egestas sodales. Suspendisse in nunc sed nisi tincidunt accumsan.',
+        description: 'Cras posuere velit ac egestas sodales. Suspendisse in nunc sed nisi tincidunt accumsan. Want dit is Blanko!',
         preview: 'blanko'
       },
       {
@@ -14,13 +15,14 @@ export default {
         name: 'CDE',
         type: 'Web app',
         date: '2018',
-        description: 'Cras posuere velit ac egestas sodales. Suspendisse in nunc sed nisi tincidunt accumsan.',
+        description: 'Cras posuere velit ac egestas sodales. Suspendisse in nunc sed nisi tincidunt accumsan. Maar dit is gewoon de Crazy Dutch Experience!',
         preview: 'cde'
       }
     ],
     pages: [
       {
-        name: 'work',
+        id: 'work',
+        name: 'Work',
         description: 'Aenean hendrerit felis sit amet leo lobortis malesuada. Nullam sit amet arcu tincidunt, condimentum ligula vel, pretium velit.'
       }
     ]
