@@ -129,6 +129,7 @@ export default {
 
       @include breakpoint(s) {
         padding: 16px 24px;
+        max-width: none;
       }
 
       img {

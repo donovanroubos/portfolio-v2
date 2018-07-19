@@ -6,15 +6,23 @@ export default {
         id: 'blanko',
         name: 'Blanko',
         type: 'Desktop app',
-        date: '2018',
+        date: {
+          year: '2017',
+          month: '11',
+          day: '5'
+        },
         description: 'Cras posuere velit ac egestas sodales. Suspendisse in nunc sed nisi tincidunt accumsan. Want dit is Blanko!',
         preview: 'blanko'
       },
       {
         id: 'cde',
-        name: 'CDE',
+        name: 'Crazy Dutch Experience',
         type: 'Web app',
-        date: '2018',
+        date: {
+          year: '2018',
+          month: '7',
+          day: '13'
+        },
         description: 'Cras posuere velit ac egestas sodales. Suspendisse in nunc sed nisi tincidunt accumsan. Maar dit is gewoon de Crazy Dutch Experience!',
         preview: 'cde'
       }

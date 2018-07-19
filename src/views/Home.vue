@@ -11,8 +11,13 @@
       </div>
     </div>
 
-    <Case title="Blanko" type="Desktop app" year="2018" preview="blanko" />
-    <Case title="Blanko" type="Desktop app" year="2018" preview="blanko" />
+    <Case v-for="caseItem in recentCases"
+      :title="caseItem.name"
+      :type="caseItem.type"
+      :year="caseItem.date.year"
+      :preview="caseItem.preview"
+      :link="`work/${caseItem.id}`"
+      />
   </div>
 </template>
 
@@ -22,9 +27,23 @@ import Case from '@/components/Case'
 
 export default {
   name: 'home',
+  data: () => ({
+    recentCases: []
+  }),
   components: {
     IntroAnimation,
     Case
+  },
+  created() {
+    this.fetchData()
+  },
+  watch: {
+    '$route': 'fetchData'
+  },
+  methods: {
+    fetchData() {
+      this.$set(this, 'recentCases', this.$globalData.content.cases)
+    }
   }
 }
 </script>

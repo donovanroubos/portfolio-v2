@@ -12,7 +12,7 @@
   <Case v-for="caseItem in cases"
     :title="caseItem.name"
     :type="caseItem.type"
-    :year="caseItem.date"
+    :year="caseItem.date.year"
     :preview="caseItem.preview"
     :link="`${routePath}/${caseItem.id}`"
     />

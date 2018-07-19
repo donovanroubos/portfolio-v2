@@ -46,6 +46,10 @@ $breakpoint-grid-xs: 480px;
     align-items: stretch;
   }
 
+  &.wrap {
+    flex-wrap: wrap;
+  }
+
   // Column
   @for $i from 1 through 12 {
     .col-#{$i} {
