@@ -27,11 +27,70 @@ export default {
         preview: 'cde'
       }
     ],
+    experience: [
+      {
+        name: 'Loyals',
+        type: 'work',
+        description: 'Aenean hendrerit felis sit amet leo lobortis malesuada. Nullam sit amet arcu tincidunt, condimentum ligula vel, pretium velit. Vestibulum luctus risus quis consequat vulputate. Suspendisse malesuada diam tristique ex aliquam, ut efficitur mauris finibus.',
+        date: {
+          from: 'Feb 2017',
+          untill: 'Present'
+        }
+      },
+      {
+        name: 'Roeseboes',
+        type: 'work',
+        description: 'Aenean hendrerit felis sit amet leo lobortis malesuada. Nullam sit amet arcu tincidunt, condimentum ligula vel, pretium velit. Vestibulum luctus risus quis consequat vulputate. Suspendisse malesuada diam tristique ex aliquam, ut efficitur mauris finibus.',
+        date: {
+          from: 'Dec 2016',
+          untill: 'Present'
+        }
+      },
+      {
+        name: 'MediaMonks',
+        type: 'work',
+        description: 'Aenean hendrerit felis sit amet leo lobortis malesuada. Nullam sit amet arcu tincidunt, condimentum ligula vel, pretium velit. Vestibulum luctus risus quis consequat vulputate. Suspendisse malesuada diam tristique ex aliquam, ut efficitur mauris finibus.',
+        date: {
+          from: 'Feb 2017',
+          untill: 'Jul 2017'
+        }
+      },
+      {
+        name: 'Mediacollege Amsterdam',
+        type: 'study',
+        role: 'Mediadeveloper',
+        description: 'Aenean hendrerit felis sit amet leo lobortis malesuada. Nullam sit amet arcu tincidunt, condimentum ligula vel, pretium velit. Vestibulum luctus risus quis consequat vulputate. Suspendisse malesuada diam tristique ex aliquam, ut efficitur mauris finibus.',
+        date: {
+          from: '2014',
+          untill: '2018'
+        }
+      }
+    ],
     pages: [
       {
         id: 'work',
         name: 'Work',
         description: 'Aenean hendrerit felis sit amet leo lobortis malesuada. Nullam sit amet arcu tincidunt, condimentum ligula vel, pretium velit.'
+      },
+      {
+        id: 'about',
+        name: 'About me',
+        profilePicture: 'me',
+        content: {
+          introduction: {
+            title: 'Introduction',
+            description: {
+              firstHalf: 'Aliquam quis ipsum sit amet ligula convallis luctus sit amet in ante. Quisque porttitor orci at tellus scelerisque vulputate. Donec ac velit imperdiet, facilisis nisi vel, tempor elit. Fusce ultrices elit eget fermentum ultricies. Donec mattis metus a nisi finibus, ut lacinia diam venenatis.',
+              secondHalf: 'Aliquam quis ipsum sit amet ligula convallis luctus sit amet in ante. Quisque porttitor orci at tellus scelerisque vulputate. Donec ac velit imperdiet, facilisis nisi vel, tempor elit. Fusce ultrices elit eget fermentum ultricies. Donec mattis metus a nisi finibus, ut lacinia diam venenatis.'
+            }
+          },
+          experience: {
+            title: 'Experience'
+          },
+          study: {
+            title: 'Study'
+          }
+        }
       }
     ]
   }

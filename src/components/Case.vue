@@ -114,7 +114,6 @@ export default {
 
     .preview-container {
       height: 100%;
-      max-width: 600px;
       max-height: 400px;
       background: $white;
       display: flex;

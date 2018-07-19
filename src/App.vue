@@ -67,12 +67,10 @@ export default {
         window.scrollTo(0, 0)
       } else {
         body.classList.remove('fixed-scroll')
-
       }
     },
     toggleMobileNav() {
       this.mobileNavShow = !this.mobileNavShow
-
       this.toggleBodyFixed()
     }
   },
