@@ -65,7 +65,11 @@ export default {
 <style lang="scss">
 .work {
   .page-detail {
-    margin: 168px 0 168px 0;
+    margin: 168px auto;
+
+    @include breakpoint(s) {
+      margin: 64px auto;
+    }
   }
 }
 </style>
