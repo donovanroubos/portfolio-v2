@@ -1,4 +1,5 @@
 <template>
+  <div class="">
   <footer class="container-l footer">
     <div class="footer-wrap">
       <h1>{{ data.footerText }} <a :href="data.footerCtaLink">{{ data.footerCta }} 👦🏻</a></h1>
@@ -12,13 +13,13 @@
       </div>
     </div>
   </footer>
+  </div>
 </template>
 
 <script>
 import Icon from '@/components/Icon'
 
 export default {
-  name: 'footer',
   props: {
     data: {
       type: Object,
