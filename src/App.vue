@@ -27,6 +27,11 @@ export default {
   created() {
     this.fetchData()
   },
+  watch: {
+    '$route' () {
+      document.title = this.$route.meta.title
+    }
+  },
   methods: {
     fetchData() {
       const footerData = this.$globalData.content.footer
