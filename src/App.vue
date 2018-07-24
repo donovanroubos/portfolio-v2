@@ -22,27 +22,22 @@ export default {
   name: 'App',
   data: () => ({
     mobileNavShow: false,
-    footer: {
-      footerText: 'Do you have a good idea, question or something else?',
-      footerCta: 'Contact me',
-      footerCtaLink: 'mailto:hello@donovanroubos.nl',
-      copyRight: 'Copyright © 2018 Donovan Roubos',
-      socials: [
-        {
-          name: 'github',
-          link: ''
-        },
-        {
-          name: 'dribbble',
-          link: ''
-        },
-        {
-          name: 'linkedin',
-          link: ''
-        }
-      ]
-    }
+    footer: {}
   }),
+  created() {
+    this.fetchData()
+  },
+  methods: {
+    fetchData() {
+      const footerData = this.$globalData.content.footer
+
+      if(footerData != undefined) {
+        this.$set(this, 'footer', footerData)
+      } else {
+        console.log('Error')
+      }
+    }
+  },
   components: {
     Header,
     Footer

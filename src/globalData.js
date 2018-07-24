@@ -31,7 +31,7 @@ export default {
       {
         name: 'Loyals',
         type: 'work',
-        description: 'Aenean hendrerit felis sit amet leo lobortis malesuada. Nullam sit amet arcu tincidunt, condimentum ligula vel, pretium velit. Vestibulum luctus risus quis consequat vulputate. Suspendisse malesuada diam tristique ex aliquam, ut efficitur mauris finibus.',
+        description: 'Aenean hendrerit felis sit amet leo lfobortis malesuada. Nullam sit amet arcu tincidunt, condimentum ligula vel, pretium velit. Vestibulum luctus risus quis consequat vulputate. Suspendisse malesuada diam tristique ex aliquam, ut efficitur mauris finibus.',
         date: {
           from: 'Feb 2017',
           untill: 'Present'
@@ -92,6 +92,26 @@ export default {
           }
         }
       }
-    ]
+    ],
+    footer: {
+      footerText: 'Do you have a good idea, question or something else?',
+      footerCta: 'Contact me',
+      footerCtaLink: 'mailto:hello@donovanroubos.nl',
+      copyRight: 'Copyright © 2018 Donovan Roubos',
+      socials: [
+        {
+          name: 'github',
+          link: ''
+        },
+        {
+          name: 'dribbble',
+          link: ''
+        },
+        {
+          name: 'linkedin',
+          link: ''
+        }
+      ]
+    }
   }
 }
