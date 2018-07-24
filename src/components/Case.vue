@@ -104,7 +104,7 @@ export default {
       margin: 32px 0 0 0;
 
       @include breakpoint(s) {
-        margin: 16px 0;
+        margin: 24px 0;
       }
     }
   }
