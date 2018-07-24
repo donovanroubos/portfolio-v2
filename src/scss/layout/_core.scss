@@ -6,6 +6,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, sans-serif;
   font-weight: 400;
+  scroll-behavior: smooth;
 
   &.fixed-scroll {
     overflow-y: hidden;

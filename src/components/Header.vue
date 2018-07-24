@@ -12,7 +12,7 @@
       <nav :class="['navigation', { show: mobileNavShow }]">
           <router-link to="/work">Work</router-link>
           <router-link to="/about">About</router-link>
-          <router-link to="/#contact">Contact</router-link>
+          <a href="#contact">Contact</a>
       </nav>
     </header>
   </div>
@@ -25,14 +25,12 @@ export default {
   }),
   watch: {
     '$route' () {
-      this.$set(this, 'mobileNavShow', false)
-      this.toggleBodyFixed()
+      this.closeMobileNav()
     }
   },
   methods: {
     toggleBodyFixed() {
       const body = document.body
-
       if(this.mobileNavShow == true) {
         body.classList.add('fixed-scroll')
         window.scrollTo(0, 0)
@@ -42,6 +40,10 @@ export default {
     },
     toggleMobileNav() {
       this.mobileNavShow = !this.mobileNavShow
+      this.toggleBodyFixed()
+    },
+    closeMobileNav() {
+      this.$set(this, 'mobileNavShow', false)
       this.toggleBodyFixed()
     }
   }

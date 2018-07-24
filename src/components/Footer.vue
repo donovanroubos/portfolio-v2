@@ -1,12 +1,12 @@
 <template>
   <div>
-  <footer class="container-l footer">
+  <footer class="container-l footer" id="contact">
     <div class="footer-wrap">
       <h1>{{ data.footerText }} <a :href="data.footerCtaLink">{{ data.footerCta }} 👦🏻</a></h1>
       <div class="bottom">
         <span>{{ data.copyRight }}</span>
         <div class="socials">
-          <a v-for="social in data.socials" :href="social.link">
+          <a v-for="social in data.socials" :href="social.link" target="_blank">
             <Icon :name="social.name" />
           </a>
         </div>

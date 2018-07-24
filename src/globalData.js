@@ -101,15 +101,15 @@ export default {
       socials: [
         {
           name: 'github',
-          link: ''
+          link: 'https://github.com/donovanroubos'
         },
         {
           name: 'dribbble',
-          link: ''
+          link: 'https://dribbble.com/donovanroubos'
         },
         {
           name: 'linkedin',
-          link: ''
+          link: 'https://www.linkedin.com/in/donovan-roubos-a209a854/'
         }
       ]
     }
