@@ -120,7 +120,6 @@ export default {
         }
 
         &.active {
-
           span {
             &:nth-child(1) {
               transform: rotate(45deg);

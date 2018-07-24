@@ -34,7 +34,6 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
-
   .footer-wrap {
     border-top: 1px solid $lighter-gray;
     padding: 0 0 80px 0;
