@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div>
   <footer class="container-l footer">
     <div class="footer-wrap">
       <h1>{{ data.footerText }} <a :href="data.footerCtaLink">{{ data.footerCta }} 👦🏻</a></h1>
