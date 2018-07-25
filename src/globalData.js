@@ -4,7 +4,7 @@ export default {
     cases: [
       {
         id: 'blanko',
-        name: 'Blanko',
+        name: 'Blanko 🕞',
         type: 'Desktop app',
         date: {
           year: '2017',
@@ -43,7 +43,7 @@ export default {
       },
       {
         id: 'cde',
-        name: 'Crazy Dutch Experience',
+        name: 'Crazy Dutch Experience 🍸',
         type: 'Web app',
         date: {
           year: '2018',
@@ -52,7 +52,7 @@ export default {
         },
         description: {
           firstHalf: 'With a team of five fellow students, I passed my final exams. The client Kees Koelewijn has a concept called the Crazy Dutch Experience. He want to sell various types of consuming products with a red pepper in it. With those thoughts he produced 900 bottles of gin called the Crazy Dutch Dry Gin.',
-          secondHalf: 'Our job was to create an informative website with campaign to create awareness around the whole experience. The website with campaign is build in VueJS with a NodeJS API backend. Check out my GitHub to see more details!'
+          secondHalf: 'Our job was to create an informative website with campaign to create awareness around the whole experience. The website with campaign is build in VueJS with a NodeJS API backend. Check out my GitHub to see more details or create your own cocktail!'
         },
         preview: 'cde',
         links: [
@@ -81,7 +81,7 @@ export default {
       {
         name: 'Loyals',
         type: 'work',
-        description: 'In the 6 months internship at Loyals in Mijdrecht I learned a lot. After that I stayed as developer and you can still find me out there! At Loyals I’m busy with brining design to live.',
+        description: 'In 6 months internship at Loyals in Mijdrecht I learned a lot. After that, I stayed as developer and you can still find me out there being busy with brining design to live!',
         date: {
           from: 'Sept 2017',
           untill: 'Present'
