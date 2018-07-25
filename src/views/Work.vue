@@ -1,11 +1,8 @@
 <template>
   <div class="container-l work">
     <div class="row page-detail">
-      <div class="col-5">
+      <div class="col-12">
         <h1>{{ name }}</h1>
-      </div>
-      <div class="col-7">
-        <p>{{ description }}</p>
       </div>
     </div>
 
@@ -65,10 +62,10 @@ export default {
 <style lang="scss">
 .work {
   .page-detail {
-    margin: 168px auto;
+    margin: 164px auto 64px auto;
 
     @include breakpoint(s) {
-      margin: 64px auto;
+      margin: 64px auto 24px auto;
     }
   }
 }

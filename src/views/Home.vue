@@ -3,11 +3,8 @@
     <IntroAnimation />
 
     <div class="row recent-work">
-      <div class="col-5">
-        <h1>Recent work</h1>
-      </div>
-      <div class="col-7">
-        <p>Aenean hendrerit felis sit amet leo lobortis malesuada. Nullam sit amet arcu tincidunt, condimentum ligula vel, pretium velit.</p>
+      <div class="col-12">
+        <h1>{{ recentWorkTitle }}</h1>
       </div>
     </div>
 
@@ -41,6 +38,8 @@ export default {
   name: 'home',
   data: () => ({
     recentCases: [],
+    recentWorkTitle: '',
+    recentWorkShortData: '',
     aboutMeShortData: '',
     aboutMeTitle: ''
   }),
@@ -59,9 +58,12 @@ export default {
     fetchData() {
       const pagesData = this.$globalData.content.pages
       const aboutMePage = pagesData.find(data => 'about' === data.id)
+      const recentWorkPage = pagesData.find(data => 'work' === data.id)
 
       this.$set(this, 'aboutMeShortData', aboutMePage.content.introduction.description.firstHalf)
       this.$set(this, 'aboutMeTitle', aboutMePage.name)
+      this.$set(this, 'recentWorkShortData', recentWorkPage.description)
+      this.$set(this, 'recentWorkTitle', recentWorkPage.name)
       this.$set(this, 'recentCases', this.$globalData.content.cases)
     }
   }
@@ -71,10 +73,10 @@ export default {
 <style lang="scss">
 .home {
   .recent-work {
-    margin: 0 0 168px 0;
+    margin: 0 0 64px 0;
 
     @include breakpoint(s) {
-      margin: 0 0 64px 0;
+      margin: 0 0 24px 0;
     }
   }
 

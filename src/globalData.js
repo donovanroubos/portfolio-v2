@@ -99,7 +99,7 @@ export default {
       {
         name: 'MediaMonks',
         type: 'work',
-        description: 'Being an intern Monk at the world\'s largest creative production company was a great experience. I was involved within a team of 9 developers on a dedicated project called Slimming World. I learned a lot about new techniques and had to get beer every Friday exactly at 16:30pm🍺.',
+        description: 'Being an intern Monk at the world\'s largest creative production company was a great experience. I was involved within a team of 9 developers on a dedicated project called Slimming World. I learned a lot about new techniques and had to get beer every Friday exactly at 16:30pm 🍺.',
         date: {
           from: 'Feb 2017',
           untill: 'Jul 2017'
@@ -119,8 +119,8 @@ export default {
     pages: [
       {
         id: 'work',
-        name: 'Work',
-        description: 'Aenean hendrerit felis sit amet leo lobortis malesuada. Nullam sit amet arcu tincidunt, condimentum ligula vel, pretium velit.'
+        name: 'Recent work',
+        description: 'Underneath you see a selection of what I’ve been working on recently.'
       },
       {
         id: 'about',
@@ -130,7 +130,7 @@ export default {
           introduction: {
             title: 'Introduction',
             description: {
-              firstHalf: 'My name is Donovan Roubos, 20 years old and a passionate frontend developer from the Netherlands🇳🇱. I recently graduated at Mediacollege Amsterdam as Mediadeveloper. I like to resolve design challenges, creating perfect user interfaces and writing semantic and structure based code.',
+              firstHalf: 'My name is Donovan Roubos, 20 years old and a passionate frontend developer from the Netherlands 🇳🇱. I recently graduated at Mediacollege Amsterdam as Mediadeveloper. I like to resolve design challenges, creating perfect user interfaces and writing semantic and structure based code.',
               secondHalf: 'Knowing all aspects about an design and an technical decision is what I like, so I can understand how to create the best. I believe that’s the way to develop an good looking and functional product. Checkout my Github for more code details!'
             }
           },
