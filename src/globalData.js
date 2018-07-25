@@ -12,7 +12,7 @@ export default {
           day: '5'
         },
         description: {
-          firstHalf: 'Together with partners Noud Adrichem and Jesse Cok, I’ve created an task manager desktop app named Blanko. With Blanko we want to make task managing with invoicing and time tracking easy for freelancers like us.',
+          firstHalf: 'Together with my partners Noud Adrichem and Jesse Cok, I’ve created a task manager desktop app named Blanko. With Blanko we like to make task managing with invoicing and time tracking easy for freelancers like us.',
           secondHalf: 'It’s created with Electron and ReactJS frameworks. The development is still going on and the app has an educational purpose, so it’s open source! Check out my GitHub to see more.'
         },
         preview: 'blanko',
@@ -51,8 +51,8 @@ export default {
           day: '13'
         },
         description: {
-          firstHalf: 'With a team of five fellow students, I passed my final exams. The client Kees Koelewijn has a concept called the Crazy Dutch Experience. He want to sell various types of consuming products with a red pepper in it. With those thoughts he produced 900 bottles of gin called the Crazy Dutch Dry Gin.',
-          secondHalf: 'Our job was to create an informative website with campaign to create awareness around the whole experience. The website with campaign is build in VueJS with a NodeJS API backend. Check out my GitHub to see more details or create your own cocktail!'
+          firstHalf: 'With a team of five fellow students, I passed my final exams with an end year project. The client Kees Koelewijn has a concept called the "Crazy Dutch Experience". He likes to sell various types of consuming products with a red pepper in it. With those thoughts he produced 900 bottles of spcial gin called the Crazy Dutch Dry Gin.',
+          secondHalf: 'Our job was to create an informative website and a campaign to create awareness around the whole experience. The website with campaign is build in VueJS with a NodeJS API backend. Check out my GitHub to see more details or create your own cocktail!'
         },
         preview: 'cde',
         links: [
@@ -81,7 +81,7 @@ export default {
       {
         name: 'Loyals',
         type: 'work',
-        description: 'In 6 months internship at Loyals in Mijdrecht I learned a lot. After that, I stayed as developer and you can still find me out there being busy with brining design to live!',
+        description: 'In a 6 months internship at Loyals in Mijdrecht I learned a lot. After that, I stayed as developer and you can still find me out there being busy with bringing design to live!',
         date: {
           from: 'Sept 2017',
           untill: 'Present'
@@ -109,7 +109,7 @@ export default {
         name: 'Mediacollege Amsterdam',
         type: 'study',
         role: 'Mediadeveloper',
-        description: 'As a Mediadeveloper student at the Mediacollege in Amsterdam I learned about how to deal with teams, external clients and of course (web) development. My study was focussed on backend development, however, my ambition was of course frontend development!',
+        description: 'As a Mediadeveloper student at the Mediacollege in Amsterdam I learned about how to operate in a team and how to be a good teamlead, interact with external clients and of course (web) development. My study was focussed on backend development, however, my ambition was and still is frontend development!',
         date: {
           from: '2014',
           untill: '2018'
@@ -130,8 +130,8 @@ export default {
           introduction: {
             title: 'Introduction',
             description: {
-              firstHalf: 'My name is Donovan Roubos, 20 years old and a passionate frontend developer from the Netherlands 🇳🇱. I recently graduated at Mediacollege Amsterdam as Mediadeveloper. I like to resolve design challenges, creating perfect user interfaces and writing semantic and structure based code.',
-              secondHalf: 'Knowing all aspects about an design and an technical decision is what I like, so I can understand how to create the best. I believe that’s the way to develop an good looking and functional product. Checkout my Github for more code details!'
+              firstHalf: 'My name is Donovan Roubos, 20 years old, from the Netherlands 🇳🇱 and a passionate frontend developer. I recently graduated at Mediacollege Amsterdam as Mediadeveloper. I like to resolve design challenges, creating perfect user interfaces and writing semantic and structure based code.',
+              secondHalf: 'Knowing all aspects about an design and an technical decision is what I like. In this way I get a good understanding and knowing how to create the best. I\'m convinced that that’s the way to develop a good looking and functional product. Checkout my Github for more code details!'
             }
           },
           experience: {
