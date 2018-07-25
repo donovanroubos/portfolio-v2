@@ -12,8 +12,8 @@ export default {
           day: '5'
         },
         description: {
-          firstHalf: 'Cras posuere velit ac egestas sodales. Suspendisse in nunc sed nisi tincidunt accumsan. Maar dit is gewoon Blanko!',
-          secondHalf: 'Second!'
+          firstHalf: 'Together with partners Noud Adrichem and Jesse Cok, I’ve created an task manager desktop app named Blanko. With Blanko we want to make task managing with invoicing easy for freelancers like us.',
+          secondHalf: 'It’s created with the Electron and ReactJS frameworks. The development is still going on and the app has an educational purpose and it’s open source! Check out my GitHub to see more.'
         },
         preview: 'blanko',
         links: [
