@@ -6,7 +6,7 @@
       <div class="bottom">
         <span>{{ data.copyRight }}</span>
         <div class="socials">
-          <a v-for="social in data.socials" :href="social.link" target="_blank">
+          <a v-for="social in data.socials" :href="social.url" target="_blank">
             <Icon :name="social.name" />
           </a>
         </div>
