@@ -6,7 +6,7 @@ import router from './router'
 import './scss/app.scss'
 
 // Import global allData
-import globalData from './globalData.js'
+import globalData from './globalData'
 
 Vue.config.productionTip = false
 
