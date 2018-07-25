@@ -16,7 +16,8 @@
 
     <CaseLinks :links="caseItem.links" />
 
-    <CasePreview :image="caseItem.previews[1].name" />
+
+    <CasePreview :image="caseItem.previews[1].name" v-if="caseItem.id == 'cde'" />
 
   </div>
 </template>
