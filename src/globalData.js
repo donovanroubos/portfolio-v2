@@ -11,8 +11,25 @@ export default {
           month: '11',
           day: '5'
         },
-        description: 'Cras posuere velit ac egestas sodales. Suspendisse in nunc sed nisi tincidunt accumsan. Want dit is Blanko!',
-        preview: 'blanko'
+        description: {
+          firstHalf: 'Cras posuere velit ac egestas sodales. Suspendisse in nunc sed nisi tincidunt accumsan. Maar dit is gewoon Blanko!',
+          secondHalf: 'Second!'
+        },
+        preview: 'blanko',
+        links: [
+          {
+            title: 'Github',
+            url: 'https://github.com/Blankoo/blanko-core/tree/master'
+          },
+          {
+            title: 'Dribbble',
+            url: 'https://dribbble.com/shots/4428701-Blanko-concept-website'
+          },
+          {
+            title: 'Website',
+            url: 'https://www.blankoapp.com/beta/'
+          }
+        ]
       },
       {
         id: 'cde',
@@ -23,8 +40,21 @@ export default {
           month: '7',
           day: '13'
         },
-        description: 'Cras posuere velit ac egestas sodales. Suspendisse in nunc sed nisi tincidunt accumsan. Maar dit is gewoon de Crazy Dutch Experience!',
-        preview: 'cde'
+        description: {
+          firstHalf: 'Cras posuere velit ac egestas sodales. Suspendisse in nunc sed nisi tincidunt accumsan. Maar dit is gewoon de Crazy Dutch Experience!',
+          secondHalf: 'Second!'
+        },
+        preview: 'cde',
+        links: [
+          {
+            title: 'Github',
+            url: 'https://github.com/donovanroubos/cde-website'
+          },
+          {
+            title: 'Website',
+            url: 'https://crazydutchexperience.com/'
+          }
+        ]
       }
     ],
     experience: [
@@ -96,20 +126,20 @@ export default {
     footer: {
       footerText: 'Do you have a good idea, question or something else?',
       footerCta: 'Contact me',
-      footerCtaLink: 'mailto:hello@donovanroubos.nl',
+      footerCtaurl: 'mailto:hello@donovanroubos.nl',
       copyRight: 'Copyright © 2018 Donovan Roubos',
       socials: [
         {
           name: 'github',
-          link: 'https://github.com/donovanroubos'
+          url: 'https://github.com/donovanroubos'
         },
         {
           name: 'dribbble',
-          link: 'https://dribbble.com/donovanroubos'
+          url: 'https://dribbble.com/donovanroubos'
         },
         {
           name: 'linkedin',
-          link: 'https://www.linkedin.com/in/donovan-roubos-a209a854/'
+          url: 'https://www.linkedin.com/in/donovan-roubos-a209a854/'
         }
       ]
     }

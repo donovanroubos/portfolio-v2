@@ -12,11 +12,11 @@
     </div>
 
     <Case v-for="caseItem in recentCases"
-      :key="key"
       :title="caseItem.name"
       :type="caseItem.type"
       :year="caseItem.date.year"
       :preview="caseItem.preview"
+      :description="caseItem.description.firstHalf"
       :link="`work/${caseItem.id}`"
       />
 

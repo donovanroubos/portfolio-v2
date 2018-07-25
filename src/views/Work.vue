@@ -14,6 +14,7 @@
       :type="caseItem.type"
       :year="caseItem.date.year"
       :preview="caseItem.preview"
+      :description="caseItem.description.firstHalf"
       :link="`${routePath}/${caseItem.id}`"
       />
 
@@ -52,7 +53,6 @@ export default {
       if (pageData != undefined && allCaseData.length != 0) {
         this.$set(this, 'name', pageData.name)
         this.$set(this, 'description', pageData.description)
-
         this.$set(this, 'cases', allCaseData)
       } else if(this.$route.name == 'work') {
         this.$router.push('/')

@@ -3,7 +3,7 @@
     <div class="col-5 details">
       <h3>{{ title }}</h3>
       <p class="type">{{ type }}<span>{{ year }}</span></p>
-      <p class="about">Cras posuere velit ac egestas sodales. Suspendisse in nunc sed nisi tincidunt accumsan.</p>
+      <p class="about">{{ description }}</p>
       <Button label="View case" :link="link" />
     </div>
     <div class="col-7 preview">
@@ -35,6 +35,10 @@ export default {
       required: false
     },
     preview: {
+      type: String,
+      required: false
+    },
+    description: {
       type: String,
       required: false
     },
