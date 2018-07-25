@@ -51,8 +51,8 @@ export default {
           day: '13'
         },
         description: {
-          firstHalf: 'Cras posuere velit ac egestas sodales. Suspendisse in nunc sed nisi tincidunt accumsan. Maar dit is gewoon de Crazy Dutch Experience!',
-          secondHalf: 'Second!'
+          firstHalf: 'With a team of five fellow students, I passed my final exams. The client Kees Koelewijn has a concept called the Crazy Dutch Experience. He want to sell various types of consuming products with a red pepper in it. With those thoughts he produced 900 bottles of gin called the Crazy Dutch Dry Gin.',
+          secondHalf: 'Our job was to create an informative website with campaign to create awareness around the whole experience. The website with campaign is build in VueJS with a NodeJS API backend. Check out my GitHub to see more details!'
         },
         preview: 'cde',
         links: [
