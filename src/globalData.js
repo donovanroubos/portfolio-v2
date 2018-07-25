@@ -81,16 +81,16 @@ export default {
       {
         name: 'Loyals',
         type: 'work',
-        description: 'Aenean hendrerit felis sit amet leo lfobortis malesuada. Nullam sit amet arcu tincidunt, condimentum ligula vel, pretium velit. Vestibulum luctus risus quis consequat vulputate. Suspendisse malesuada diam tristique ex aliquam, ut efficitur mauris finibus.',
+        description: 'In the 6 months internship at Loyals in Mijdrecht I learned a lot. After that I stayed as developer and you can still find me out there! At Loyals I’m busy with brining design to live.',
         date: {
-          from: 'Feb 2017',
+          from: 'Sept 2017',
           untill: 'Present'
         }
       },
       {
         name: 'Roeseboes',
         type: 'work',
-        description: 'Aenean hendrerit felis sit amet leo lobortis malesuada. Nullam sit amet arcu tincidunt, condimentum ligula vel, pretium velit. Vestibulum luctus risus quis consequat vulputate. Suspendisse malesuada diam tristique ex aliquam, ut efficitur mauris finibus.',
+        description: 'Besides being an employee, I am also busy with my own company called Roeseboes (my surname with a Dutch twist). With Roeseboes I’m helping small and medium-sized enterprises to make internet marketing possible. I do this by using the latest techniques and of course love and passion.',
         date: {
           from: 'Dec 2016',
           untill: 'Present'
@@ -99,7 +99,7 @@ export default {
       {
         name: 'MediaMonks',
         type: 'work',
-        description: 'Aenean hendrerit felis sit amet leo lobortis malesuada. Nullam sit amet arcu tincidunt, condimentum ligula vel, pretium velit. Vestibulum luctus risus quis consequat vulputate. Suspendisse malesuada diam tristique ex aliquam, ut efficitur mauris finibus.',
+        description: 'Being an intern Monk at the world\'s largest creative production company was a great experience. I was involved within a team of 9 developers on a dedicated project called Slimming World. I learned a lot about new techniques and had to get beer every Friday exactly at 16:30pm🍺.',
         date: {
           from: 'Feb 2017',
           untill: 'Jul 2017'
@@ -109,7 +109,7 @@ export default {
         name: 'Mediacollege Amsterdam',
         type: 'study',
         role: 'Mediadeveloper',
-        description: 'Aenean hendrerit felis sit amet leo lobortis malesuada. Nullam sit amet arcu tincidunt, condimentum ligula vel, pretium velit. Vestibulum luctus risus quis consequat vulputate. Suspendisse malesuada diam tristique ex aliquam, ut efficitur mauris finibus.',
+        description: 'As a Mediadeveloper student at the Mediacollege in Amsterdam I learned about how to deal with teams, external clients and of course (web) development. My study was focussed on backend development, however, my ambition was of course frontend development!',
         date: {
           from: '2014',
           untill: '2018'
