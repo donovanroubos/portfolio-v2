@@ -146,7 +146,7 @@ export default {
     footer: {
       footerText: 'Do you have a good idea, question or something else?',
       footerCta: 'Contact me',
-      footerCtaurl: 'mailto:hello@donovanroubos.nl',
+      footerCtaUrl: 'mailto:hello@donovanroubos.nl',
       copyRight: 'Copyright © 2018 Donovan Roubos',
       socials: [
         {
