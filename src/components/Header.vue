@@ -1,7 +1,7 @@
 <template>
   <div>
     <header class="container-l header">
-      <router-link to="/" tag="div"><a class="logo">dr.</a></router-link>
+      <router-link to="/" tag="div"><a class="logo">Donovan.</a></router-link>
       <div class="nav-mobile-toggler" @click="toggleMobileNav()">
         <div :class="['nav-icon', { active: mobileNavShow }]">
           <span></span>

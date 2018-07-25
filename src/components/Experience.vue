@@ -47,7 +47,7 @@ export default {
 
 .experience {
   &:not(:last-child) {
-    margin: 0 0 64px 0;
+    margin: 0 0 80px 0;
 
     @include breakpoint(s) {
       margin: 0 0 40px 0;

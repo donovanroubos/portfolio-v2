@@ -80,8 +80,8 @@ export default {
           introduction: {
             title: 'Introduction',
             description: {
-              firstHalf: 'Aliquam quis ipsum sit amet ligula convallis luctus sit amet in ante. Quisque porttitor orci at tellus scelerisque vulputate. Donec ac velit imperdiet, facilisis nisi vel, tempor elit. Fusce ultrices elit eget fermentum ultricies. Donec mattis metus a nisi finibus, ut lacinia diam venenatis.',
-              secondHalf: 'Aliquam quis ipsum sit amet ligula convallis luctus sit amet in ante. Quisque porttitor orci at tellus scelerisque vulputate. Donec ac velit imperdiet, facilisis nisi vel, tempor elit. Fusce ultrices elit eget fermentum ultricies. Donec mattis metus a nisi finibus, ut lacinia diam venenatis.'
+              firstHalf: 'My name is Donovan Roubos, 20 years old and a passionate frontend developer from the Netherlands🇳🇱. I recently graduated at Mediacollege Amsterdam as Mediadeveloper. I like to resolve design challenges, creating perfect user interfaces and writing semantic and structure based code.',
+              secondHalf: 'Knowing all aspects about an design and an technical decision is what I like, so I can understand how to create the best. I believe that’s the way to develop an good looking and functional product. Checkout my Github for more code details!'
             }
           },
           experience: {

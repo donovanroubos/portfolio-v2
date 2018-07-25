@@ -7,7 +7,7 @@
         <h1>Recent work</h1>
       </div>
       <div class="col-7">
-        <p>Aenean hendrerit felis sit amet leo lobortis malesuada. Nullam sit amet arcu tincidunt, condimentum ligula vel, pretium velit. </p>
+        <p>Aenean hendrerit felis sit amet leo lobortis malesuada. Nullam sit amet arcu tincidunt, condimentum ligula vel, pretium velit.</p>
       </div>
     </div>
 

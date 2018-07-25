@@ -10,6 +10,9 @@
         </div>
       </div>
     </div>
+    <div class="backdrop">
+
+    </div>
   </div>
 </template>
 
@@ -41,6 +44,7 @@ export default {
   width: 100%;
   display: flex;
   align-items: center;
+  position: relative;
 
   .intro-container {
     position: relative;
@@ -97,6 +101,22 @@ export default {
           text-decoration: underline;
         }
       }
+    }
+  }
+
+  .backdrop {
+    flex-basis: 58.33333%;
+    max-width: 58.33333%;
+    background: $white;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+
+    @include breakpoint(s) {
+      max-height: 300px;
     }
   }
 }

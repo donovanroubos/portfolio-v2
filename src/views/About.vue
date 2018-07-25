@@ -1,6 +1,6 @@
 <template>
   <div class="container-l about">
-    <div class="row">
+    <div class="row page-detail">
         <div class="col-5">
           <h1>{{ name }}</h1>
         </div>
@@ -108,11 +108,14 @@ export default {
 
 <style lang="scss" scoped>
 .about {
-  margin: 168px auto 168px auto;
+  .page-detail {
+    margin: 168px 0 0 0;
 
-  @include breakpoint(s) {
-    margin: 64px auto;
+    @include breakpoint(s) {
+      margin: 64px 0 0 0;
+    }
   }
+
 
   h1 {
     margin-bottom: 40px;
@@ -197,6 +200,14 @@ export default {
 
   .study {
     margin: 40px 0 0 0;
+  }
+
+  .experience:last-child {
+    margin: 0 0 168px 0;
+
+    @include breakpoint(s) {
+      margin: 0 0 64px 0;
+    }
   }
 }
 </style>
