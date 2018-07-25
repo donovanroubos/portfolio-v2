@@ -29,6 +29,16 @@ export default {
             title: 'Website',
             url: 'https://www.blankoapp.com/beta/'
           }
+        ],
+        previews: [
+          {
+            name: 'blanko-app.png',
+            title: 'Blanko app'
+          },
+          {
+            name: 'blanko-app.png',
+            title: 'Blanko app'
+          }
         ]
       },
       {
@@ -53,6 +63,16 @@ export default {
           {
             title: 'Website',
             url: 'https://crazydutchexperience.com/'
+          }
+        ],
+        previews: [
+          {
+            name: 'cde-website.gif',
+            title: 'Crazy Dutch Experience website'
+          },
+          {
+            name: 'cde-app.gif',
+            title: 'Crazy Dutch Experience campaign'
           }
         ]
       }

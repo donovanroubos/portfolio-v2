@@ -1,6 +1,6 @@
 <template>
   <div class="case-links">
-    <div class="row">
+    <div class="row align-center">
       <div class="col-6">
         <h2>Links</h2>
       </div>
@@ -25,7 +25,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .case-links {
   margin: 128px 0;
 

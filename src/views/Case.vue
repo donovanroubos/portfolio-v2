@@ -12,13 +12,18 @@
       </div>
     </div>
 
+    <CasePreview :image="caseItem.previews[0].name" />
+
     <CaseLinks :links="caseItem.links" />
+
+    <CasePreview :image="caseItem.previews[1].name" />
 
   </div>
 </template>
 
 <script>
 import CaseLinks from '@/components/CaseLinks'
+import CasePreview from '@/components/CasePreview'
 
 export default {
   name: 'work',
@@ -38,7 +43,8 @@ export default {
     '$route': 'fetchData'
   },
   components: {
-    CaseLinks
+    CaseLinks,
+    CasePreview
   },
   methods: {
     fetchData () {
@@ -108,6 +114,16 @@ export default {
           padding: 0;
         }
       }
+    }
+  }
+}
+
+.case-preview {
+  &:last-child {
+    margin: 0 0 168px 0;
+
+    @include breakpoint(s) {
+      margin: 0 0 64px 0;
     }
   }
 }
