@@ -12,7 +12,7 @@
       <nav :class="['navigation', { show: mobileNavShow }]">
           <router-link to="/work">Work</router-link>
           <router-link to="/about">About</router-link>
-          <a href="#contact">Contact</a>
+          <a href="#contact" @click="closeMobileNav">Contact</a>
       </nav>
     </header>
   </div>
