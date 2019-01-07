@@ -79,27 +79,36 @@ export default {
     ],
     experience: [
       {
-        name: 'Loyals',
-        type: 'work',
-        description: 'In a 6 months internship at Loyals in Mijdrecht I learned a lot. After that, I stayed as developer and you can still find me out there being busy with bringing design to live!',
-        date: {
-          from: 'Sept 2017',
-          untill: 'Present'
-        }
-      },
-      {
         name: 'Roeseboes',
         type: 'work',
-        description: 'Besides being an employee, I am also busy with my own company called Roeseboes (my surname with a Dutch twist). With Roeseboes I’m helping small and medium-sized enterprises to make internet marketing possible. I do this by using the latest techniques and of course love and passion.',
+        description: 'Besides being an employee, I\'m also busy with my own company called Roeseboes (my surname with a Dutch twist). With Roeseboes I’m helping small and medium-sized enterprises to make internet marketing possible. I do this by using the latest techniques and of course love and passion.',
         date: {
           from: 'Dec 2016',
           untill: 'Present'
         }
       },
       {
+        name: 'Yummygum',
+        type: 'work',
+        description: 'From today on I\'m focussing on creating the best reusable web components at the most awesome design agency Yummugum. We\'re never not working on something great. That means I\'m always working on exciting new projects and realizing the most challenging UI\'s.',
+        date: {
+          from: 'Sept 2018',
+          untill: 'Present'
+        }
+      },
+      {
+        name: 'Loyals',
+        type: 'work',
+        description: 'In a 6 months internship at Loyals in Mijdrecht I learned a lot. After that, I stayed as developer. To work in a fast growing digital agency was an great experience for me!',
+        date: {
+          from: 'Sept 2017',
+          untill: 'Aug 2018'
+        }
+      },
+      {
         name: 'MediaMonks',
         type: 'work',
-        description: 'Being an intern Monk at the world\'s largest creative production company was a great experience. I was involved within a team of 9 developers on a dedicated project called Slimming World. I learned a lot about new techniques and had to get beer every Friday exactly at 16:30pm 🍺.',
+        description: 'Being an intern Monk at the world\'s largest creative production company was a great experience. I was involved within a team of 9 developers on a dedicated project called Slimming World. I learned a lot about new techniques like React and had to get beer every Friday exactly at 16:30pm 🍺.',
         date: {
           from: 'Feb 2017',
           untill: 'Jul 2017'
@@ -109,7 +118,7 @@ export default {
         name: 'Mediacollege Amsterdam',
         type: 'study',
         role: 'Mediadeveloper',
-        description: 'As a Mediadeveloper student at the Mediacollege in Amsterdam I learned about how to operate in a team and how to be a good teamlead, interact with external clients and of course (web) development. My study was focussed on backend development, however, my ambition was and still is frontend development!',
+        description: 'As a Mediadeveloper student at the Mediacollege in Amsterdam I learned about how to operate in a team and how to be a good teamlead, interact with external clients and of course (web) development in the broadest sense. My study was focussed on backend development, however, my ambition was and still is being an awesome frontend developer!',
         date: {
           from: '2014',
           untill: '2018'
@@ -130,7 +139,7 @@ export default {
           introduction: {
             title: 'Introduction',
             description: {
-              firstHalf: 'My name is Donovan Roubos, 20 years old, from the Netherlands 🇳🇱 and a passionate frontend developer. I recently graduated at Mediacollege Amsterdam as Mediadeveloper. I like to resolve design challenges, creating perfect user interfaces and writing semantic and structure based code.',
+              firstHalf: 'My name is Donovan Roubos, 21 years old, from the Netherlands 🇳🇱 and a passionate frontend developer. I recently graduated at Mediacollege Amsterdam as Mediadeveloper. I like to resolve design challenges, creating perfect user interfaces and writing semantic and structure based code.',
               secondHalf: 'Knowing all aspects about design and technical decisions is what I like. In this way I get a good understanding and knowing how to create the best. I\'m convinced that that’s the way to develop a good looking and functional product. Checkout my Github for more code!'
             }
           },
@@ -147,7 +156,7 @@ export default {
       footerText: 'Do you have a good idea, question or something else?',
       footerCta: 'Contact me',
       footerCtaUrl: 'mailto:hello@donovanroubos.nl',
-      copyRight: 'Copyright © 2018 Donovan Roubos',
+      copyRight: 'Copyright © 2019 Donovan Roubos',
       socials: [
         {
           name: 'github',
