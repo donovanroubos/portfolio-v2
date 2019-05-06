@@ -90,7 +90,7 @@ export default {
       {
         name: 'Yummygum',
         type: 'work',
-        description: 'From today on I\'m focussing on creating the best reusable web components at the most awesome design agency Yummugum. We\'re never not working on something great. That means I\'m always working on exciting new projects and realizing the most challenging UI\'s.',
+        description: 'From today on I\'m focussing on creating the best reusable web components at the most awesome design agency Yummygum. We\'re never not working on something great. That means I\'m always working on exciting new projects and realizing the most challenging UI\'s.',
         date: {
           from: 'Sept 2018',
           untill: 'Present'
